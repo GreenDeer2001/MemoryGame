@@ -92,6 +92,7 @@ section{
     height: 100px;
     display: inline-block;
     transition: 1s linear 0s;
+    cursor: pointer;
 
 }
 @media screen and (min-width:768px){

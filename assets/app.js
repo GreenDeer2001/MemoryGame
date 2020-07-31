@@ -74,14 +74,7 @@ elements.addEventListener("click", (event) => {
         elem.closest("li").style.pointerEvents = "none";
         elem.src = elem.closest("li").dataset.imgUrl;
 
-
-
         elem.closest('li').style.transform = "rotateY(360deg)" + elem.closest('li').style.transform;
-
-
-
-
-
 
         if (firstChosse === "") {
             firstChosse = elem.closest("li");
