@@ -75,7 +75,6 @@ elements.addEventListener("click", (event) => {
         elem.src = elem.closest("li").dataset.imgUrl;
 
 
-        elem.closest('li').style.transition = '1s linear 0s'
 
         elem.closest('li').style.transform = "rotateY(360deg)" + elem.closest('li').style.transform;
 
