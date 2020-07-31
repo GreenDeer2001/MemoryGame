@@ -77,7 +77,7 @@ elements.addEventListener("click", (event) => {
 
         elem.closest('li').style.transition = '1s linear 0s'
 
-        elem.closest('li').style.transform = "rotateY(180deg)" + elem.closest('li').style.transform;
+        elem.closest('li').style.transform = "rotateY(360deg)" + elem.closest('li').style.transform;
 
 
 
