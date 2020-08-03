@@ -60,6 +60,7 @@ function reset() {
 async function gameEngine(arg1, arg2) {
 
 
+
     body.style.pointerEvents = "none";
     isValid(arg1, arg2);
 
@@ -72,7 +73,6 @@ elements.addEventListener("click", (event) => {
     if (firstChosse === "" || secondChoose === "") {
         const elem = event.target;
         elem.closest("li").style.pointerEvents = "none";
-        // elem.src = elem.closest("li").dataset.imgUrl;
         elem.setAttribute("src", elem.closest("li").dataset.imgUrl)
 
         elem.closest('li').style.transform = "rotateY(360deg)" + elem.closest('li').style.transform;
@@ -81,7 +81,6 @@ elements.addEventListener("click", (event) => {
             firstChosse = elem.closest("li");
         } else {
             secondChoose = elem.closest("li");
-            console.log(firstChosse, secondChoose);
             gameEngine(firstChosse, secondChoose);
         }
     } else {
