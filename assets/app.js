@@ -9,7 +9,7 @@ let secondChoose = "";
 
 
 function setDefaultImg() {
-    imgs.forEach(img => img.src = 'images/questionMark.png')
+    imgs.forEach(img => img.setAttribute("src", 'images/questionMark.png'))
 }
 
 
@@ -72,7 +72,8 @@ elements.addEventListener("click", (event) => {
     if (firstChosse === "" || secondChoose === "") {
         const elem = event.target;
         elem.closest("li").style.pointerEvents = "none";
-        elem.src = elem.closest("li").dataset.imgUrl;
+        // elem.src = elem.closest("li").dataset.imgUrl;
+        elem.setAttribute("src", elem.closest("li").dataset.imgUrl)
 
         elem.closest('li').style.transform = "rotateY(360deg)" + elem.closest('li').style.transform;
 

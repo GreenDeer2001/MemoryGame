@@ -59,6 +59,7 @@ body{
     margin-right: 2rem;
     width: 60%;
     transition: 300ms linear 0s;
+    cursor: pointer;
 }
 
 .start-game-btn:hover{
